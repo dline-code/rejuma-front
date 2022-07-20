@@ -50,15 +50,10 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
-const Appointment = React.lazy(() => import('./views/appointment/index'))
-const Treatment = React.lazy(() => import('./views/treament'))
-
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
-  { path: '/appointment', name: 'Appointment', component: Appointment },
-  { path: '/treatment', name: 'Appointment', component: Treatment },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
   { path: '/base', name: 'Base', component: Cards, exact: true },

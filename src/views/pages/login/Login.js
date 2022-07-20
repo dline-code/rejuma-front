@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import {
   CButton,
   CCard,
@@ -16,10 +16,7 @@ import {
 import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
 
-import { AuthContext } from 'src/contexts/AuthContext'
-
 const Login = () => {
-  const { signIn } = useContext(AuthContext)
   const [loading, setLoading] = useState(false)
   const [password, setPassword] = useState('')
   const [contact, setContact] = useState('')
@@ -30,8 +27,6 @@ const Login = () => {
       contact,
       password,
     }
-
-    signIn(loginData)
   }
 
   return (

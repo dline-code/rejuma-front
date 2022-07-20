@@ -1,10 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react'
 import Swal from 'sweetalert2'
-
 import api from 'src/services/api'
-
 import { useHistory } from 'react-router-dom'
-
 
 const AuthContext = createContext({})
 
@@ -13,7 +10,6 @@ const AuthProvider = ({ children }) => {
   const [authenticated, setAuthenticated] = useState(false)
   const [loading, setLoading] = useState(true)
   const history = useHistory()
-
 
   async function recoverUserInfo() {
     const USER_ID = JSON.parse(String(localStorage.getItem('user-id')))
