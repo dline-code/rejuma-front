@@ -1,6 +1,6 @@
-import React, { Suspense, useContext } from 'react'
-import { Redirect, Route, Switch } from 'react-router-dom'
 import { CContainer, CSpinner } from '@coreui/react'
+import React, { Suspense } from 'react'
+import { Redirect, Route, Switch } from 'react-router-dom'
 
 // routes config
 import routes from '../routes'
