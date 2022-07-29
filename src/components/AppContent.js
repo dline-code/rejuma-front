@@ -4,13 +4,8 @@ import { CContainer, CSpinner } from '@coreui/react'
 
 // routes config
 import routes from '../routes'
-import { AuthContext } from 'src/contexts/AuthContext'
 
-function CustomRoute({ isPrivate = true, ...rest }) {
-  const { authenticated } = useContext(AuthContext)
-  if (isPrivate && !authenticated) {
-    return <Redirect to={'/login'} />
-  }
+function CustomRoute({ ...rest }) {
   return <Route {...rest} />
 }
 

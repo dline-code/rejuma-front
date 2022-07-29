@@ -6,27 +6,26 @@ import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 const _nav = [
   {
     component: CNavTitle,
-    name: 'Salão',
+    name: 'Colégio Rejuma',
   },
   {
     component: CNavItem,
-    name: 'Agendamentos',
-    to: '/appointment',
+    name: 'Matrículas',
+    to: '/matriculas',
     icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Funcionários',
-    to: '/theme/typography',
+    to: '/funcionarios',
     icon: <CIcon icon={cilPeople} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Serviços',
-    to: '/treatment',
+    to: '/services',
     icon: <CIcon icon={cilCursor} customClassName="nav-icon" />,
   },
-
   {
     component: CNavItem,
     name: 'Estatísticas',
