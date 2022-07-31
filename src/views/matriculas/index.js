@@ -4,12 +4,10 @@ import {
   CCardBody,
   CCardHeader,
   CCardTitle,
-  CCol,
   CContainer,
   CLink,
   CTable,
   CTableBody,
-  CTableCaption,
   CTableDataCell,
   CTableFoot,
   CTableHead,
@@ -17,6 +15,7 @@ import {
   CTableRow,
 } from '@coreui/react'
 import React from 'react'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
 function Matriculas() {
   return (
@@ -27,9 +26,9 @@ function Matriculas() {
             style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
           >
             <CCardTitle> Matriculas </CCardTitle>
-            <CLink href="/matriculas/create">
-              <CButton> Nova Matricula </CButton>
-            </CLink>
+            <Link to="/matriculas/create">
+              <CButton>Nova Matricula</CButton>
+            </Link>
           </CCardHeader>
           <CCardBody>
             <CTable bordered>
