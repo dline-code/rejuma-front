@@ -51,56 +51,56 @@ function Matriculas() {
                 </CTableRow>
                 <CTableRow>
                   <CTableDataCell> 2 </CTableDataCell>
-                  <CTableDataCell> Mário Domingos Varela </CTableDataCell>
+                  <CTableDataCell> Albertina Jorge </CTableDataCell>
                   <CTableDataCell> 009696435LA190 </CTableDataCell>
                   <CTableDataCell> M </CTableDataCell>
-                  <CTableDataCell> 10/09/1990 </CTableDataCell>
+                  <CTableDataCell> 10/09/1992 </CTableDataCell>
                 </CTableRow>
                 <CTableRow>
                   <CTableDataCell> 3 </CTableDataCell>
-                  <CTableDataCell> Mário Domingos Varela </CTableDataCell>
+                  <CTableDataCell> Domingos Sebastião </CTableDataCell>
                   <CTableDataCell> 009696435LA190 </CTableDataCell>
                   <CTableDataCell> M </CTableDataCell>
                   <CTableDataCell> 10/09/1990 </CTableDataCell>
                 </CTableRow>
                 <CTableRow>
                   <CTableDataCell> 4 </CTableDataCell>
-                  <CTableDataCell> Mário Domingos Varela </CTableDataCell>
+                  <CTableDataCell> Mário Varela </CTableDataCell>
                   <CTableDataCell> 009696435LA190 </CTableDataCell>
                   <CTableDataCell> M </CTableDataCell>
                   <CTableDataCell> 10/09/1990 </CTableDataCell>
                 </CTableRow>
                 <CTableRow>
                   <CTableDataCell> 5 </CTableDataCell>
-                  <CTableDataCell> Mário Domingos Varela </CTableDataCell>
+                  <CTableDataCell> Verónica de Almeida </CTableDataCell>
                   <CTableDataCell> 009696435LA190 </CTableDataCell>
                   <CTableDataCell> M </CTableDataCell>
                   <CTableDataCell> 10/09/1990 </CTableDataCell>
                 </CTableRow>
                 <CTableRow>
                   <CTableDataCell> 6 </CTableDataCell>
-                  <CTableDataCell> Mário Domingos Varela </CTableDataCell>
+                  <CTableDataCell> Ernesto Salias Ilas </CTableDataCell>
                   <CTableDataCell> 009696435LA190 </CTableDataCell>
                   <CTableDataCell> M </CTableDataCell>
                   <CTableDataCell> 10/09/1990 </CTableDataCell>
                 </CTableRow>
                 <CTableRow>
                   <CTableDataCell> 7 </CTableDataCell>
-                  <CTableDataCell> Mário Domingos Varela </CTableDataCell>
+                  <CTableDataCell> Osvaldo de Sousa </CTableDataCell>
                   <CTableDataCell> 009696435LA190 </CTableDataCell>
                   <CTableDataCell> M </CTableDataCell>
                   <CTableDataCell> 10/09/1990 </CTableDataCell>
                 </CTableRow>
                 <CTableRow>
                   <CTableDataCell> 8 </CTableDataCell>
-                  <CTableDataCell> Mário Domingos Varela </CTableDataCell>
+                  <CTableDataCell> Magarida André </CTableDataCell>
                   <CTableDataCell> 009696435LA190 </CTableDataCell>
                   <CTableDataCell> M </CTableDataCell>
                   <CTableDataCell> 10/09/1990 </CTableDataCell>
                 </CTableRow>
                 <CTableRow>
                   <CTableDataCell> 9 </CTableDataCell>
-                  <CTableDataCell> Mário Domingos Varela </CTableDataCell>
+                  <CTableDataCell> Paulino Passil </CTableDataCell>
                   <CTableDataCell> 009696435LA190 </CTableDataCell>
                   <CTableDataCell> M </CTableDataCell>
                   <CTableDataCell> 10/09/1990 </CTableDataCell>
