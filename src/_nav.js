@@ -1,6 +1,6 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
-import { cilChartPie, cilCursor, cilNotes, cilStar, cilPeople } from '@coreui/icons'
+import { cilChartPie, cilCursor, cilNotes, cilStar, cilPeople, cilEducation } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
 const _nav = [
@@ -9,22 +9,53 @@ const _nav = [
     name: 'Colégio Rejuma',
   },
   {
-    component: CNavItem,
-    name: 'Matrículas',
-    to: '/matriculas',
-    icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
+    component: CNavGroup,
+    name: 'Estudantes',
+    icon: <CIcon icon={cilEducation} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Matrícula',
+        to: '/matriculas',
+        icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
+      },
+      {
+        component: CNavItem,
+        name: 'Ensino Primário',
+        to: '/',
+        icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
+      },
+      {
+        component: CNavItem,
+        name: 'Iº cíclo',
+        to: '/',
+        icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
+      },
+      {
+        component: CNavItem,
+        name: 'IIº cíclo',
+        to: '/',
+        icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
+      },
+    ],
   },
   {
     component: CNavItem,
     name: 'Funcionários',
-    to: '/funcionarios',
+    to: '/',
     icon: <CIcon icon={cilPeople} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
-    name: 'Serviços',
+    name: 'Produtos',
     to: '/services',
     icon: <CIcon icon={cilCursor} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Propinas',
+    to: '/',
+    icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
