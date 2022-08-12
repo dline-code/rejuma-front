@@ -36,11 +36,43 @@ function Step1(props) {
             <CFormInput name="firstName" onChange={onInputChanged} />
           </CCol>
           <CCol>
-            <CFormLabel> Último Nome </CFormLabel>
+            <CFormLabel> Segundo Nome </CFormLabel>
             <CFormInput name="lastName" onChange={onInputChanged} />
           </CCol>
           <CCol>
-            <CFormLabel> Outros Nomes </CFormLabel>
+            <CFormLabel> Último Nome </CFormLabel>
+            <CFormInput name="otherName" onChange={onInputChanged} />
+          </CCol>
+        </CRow>
+        <CRow>
+          <CCol>
+            <CFormLabel> Classe </CFormLabel>
+            <CFormInput name="name" onChange={onInputChanged} />
+          </CCol>
+          <CCol>
+            <CFormLabel> Curso </CFormLabel>
+            <CFormInput name="name" onChange={onInputChanged} />
+          </CCol>
+          <CCol>
+            <CFormLabel> Turno </CFormLabel>
+            <CFormInput name="otherName" onChange={onInputChanged} />
+          </CCol>
+          <CCol>
+            <CFormLabel> Documentos </CFormLabel>
+            <CFormInput name="file" onChange={onInputChanged} />
+          </CCol>
+        </CRow>
+        <CRow>
+          <CCol>
+            <CFormLabel> Valor da Matrícula </CFormLabel>
+            <CFormInput name="name" onChange={onInputChanged} />
+          </CCol>
+          <CCol>
+            <CFormLabel> Valor Do Primeiro Mês </CFormLabel>
+            <CFormInput name="name" onChange={onInputChanged} />
+          </CCol>
+          <CCol>
+            <CFormLabel> Valor do Uniforme </CFormLabel>
             <CFormInput name="otherName" onChange={onInputChanged} />
           </CCol>
         </CRow>
