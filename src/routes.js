@@ -3,6 +3,7 @@ import React from 'react'
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Matriculas = React.lazy(() => import('./views/matriculas'))
 const NewMatricula = React.lazy(() => import('./views/matriculas/new'))
+const Propinas = React.lazy(() => import('./views/propinas'))
 
 //Forms
 const ChecksRadios = React.lazy(() => import('./views/forms/checks-radios/ChecksRadios'))
@@ -28,6 +29,7 @@ const routes = [
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/matriculas', name: 'Matrículas', component: Matriculas, exact: true },
   { path: '/matriculas/create', name: 'Criar Matricula', component: NewMatricula },
+  { path: '/propinas', name: 'Propinas', component: Propinas },
   { path: '/charts', name: 'Charts', component: Charts },
   { path: '/forms', name: 'Forms', component: FormControl, exact: true },
   { path: '/forms/form-control', name: 'Form Control', component: FormControl },
