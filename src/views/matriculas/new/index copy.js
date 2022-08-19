@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Stepper, Step } from 'react-form-stepper';
-import StepWizard from 'react-step-wizard';
+import { Stepper, Step } from 'react-form-stepper'
+import StepWizard from 'react-step-wizard'
 import {
   CCard,
   CCardBody,
