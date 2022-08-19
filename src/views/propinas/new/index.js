@@ -1,9 +1,12 @@
+import { CContainer } from '@coreui/react'
 import React from 'react'
 
-// import { Container } from './styles';
-
 function NewPropinaPayment() {
-  return <div />
+  return (
+    <>
+      <CContainer></CContainer>
+    </>
+  )
 }
 
 export default NewPropinaPayment

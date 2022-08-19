@@ -12,11 +12,11 @@ const routes = [
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/matriculas', name: 'Matrículas', component: Matriculas, exact: true },
   { path: '/matriculas/create', name: 'Criar Matricula', component: NewMatricula },
-  { path: '/propinas', name: 'Propinas', component: Propinas },
+  { path: '/propinas', name: 'Propinas', component: Propinas, exact: true },
   { path: '/propinas/:id', name: 'Propinas - Detalhes', component: PropinaDetails },
   {
     path: '/propinas/create',
-    name: 'Adicionar Novo Pagamento de Propinas',
+    name: 'Pagamento de Propinas',
     component: NewPropinaPayment,
   },
 ]

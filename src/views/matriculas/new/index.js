@@ -9,6 +9,7 @@ import Step2 from './step2'
 import Step3 from './step3'
 
 function NewMatricula() {
+  // eslint-disable-next-line
   const [stepWizard, setStepWizard] = useState(null)
   const [user, setUser] = useState({})
   const [activeStep, setActiveStep] = useState(0)
