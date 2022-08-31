@@ -17,7 +17,9 @@ import {
   
   } from '@coreui/react'
   import React from 'react'
-  //import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+  import CIcon from '@coreui/icons-react'
+  import { cilDelete } from '@coreui/icons'
+  import { Link } from 'react-router-dom/cjs/react-router-dom.min'
   
   
   function Produtos () {
@@ -29,6 +31,9 @@ import {
                       style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
                   >
                       <CCardTitle> Produtos </CCardTitle>
+                      <Link to="/produtos/create">
+                    <CButton>Adicionar Produtos</CButton>
+                    </Link>
                   </CCardHeader>
   
                   <CCardBody>
@@ -51,6 +56,8 @@ import {
                           <CTableDataCell> Goreth Manuel </CTableDataCell>
                           <CTableDataCell> 009696435LA190 </CTableDataCell>
                           <CTableDataCell> M </CTableDataCell>
+                          
+                          <CTableDataCell> <CIcon icon={cilDelete}/> </CTableDataCell>
                           </CTableRow>
   
                           <CTableRow>
