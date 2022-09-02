@@ -18,7 +18,9 @@ import {
     CModalHeader,
     CModalTitle,
     CModalBody,
-    CModalFooter
+    CModalFooter,
+    CForm,
+    CFormInput
   
   } from '@coreui/react'
   import React, { useState } from 'react'
@@ -63,7 +65,6 @@ import {
                           <CTableDataCell> M </CTableDataCell>
                           <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilDelete}/> </CTableDataCell>
                           <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilTrash}/> </CTableDataCell>
-                          
                           </CTableRow>
   
                           <CTableRow>
@@ -137,18 +138,40 @@ import {
                 </CCard>
             </CContainer>
 
-        < CModal visible = { visible } onClose = { ( ) => setVisible ( false ) } >    
+        < CModal visible = { visible } onClose = { ( ) => setVisible ( false ) } >   
+
             < CModalHeader onClose = { ( ) => setVisible ( false ) } >   
-                <CModalTitle> Título modal </CModalTitle>
+                <CModalTitle> Produtos </CModalTitle>
             </ CModalHeader >
 
-            < CModalBody > Woohoo, você está lendo este texto em um modal! </ CModalBody >
+            < CModalBody > 
+            <CForm>
+                <CFormInput
+                    type="name"
+                    id=""
+                    placeholder="nome do produto"
+                    text="Must be 8-20 characters long."
+                />
+                <br/>
+                <CFormInput
+                    type="venda"
+                    id=""
+                    placeholder="Venda"
+                    text="Must be 8-20 characters long."
+                />
+                <br/>
+                <CFormInput
+                    type="text"
+                    id=""
+                    placeholder="stock"
+                    text="Must be 8-20 characters long."
+                />
+            </CForm>
+            
+            </ CModalBody >
 
             < CModalFooter >
-                < CButton color = " secundário " onClick = { ( ) => setVisible ( false ) } >    
-                Perto
-                </CButton >
-                < CButton color = " primary " > Salvar alterações </ CButton > 
+                <CButton onClick={() => setVisible(false)}> Salvar alterações </CButton > 
             </ CModalFooter >
         </CModal >
   </ >
