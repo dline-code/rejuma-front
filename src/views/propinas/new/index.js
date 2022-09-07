@@ -1,10 +1,16 @@
-import { CContainer } from '@coreui/react'
+import { CContainer, CCard, CCardBody, CCardHeader, CCardFooter } from '@coreui/react'
 import React from 'react'
 
 function NewPropinaPayment() {
   return (
     <>
-      <CContainer></CContainer>
+      <CContainer>
+        <CCard>
+          <CCardHeader></CCardHeader>
+          <CCardBody></CCardBody>
+          <CCardFooter></CCardFooter>
+        </CCard>
+      </CContainer>
     </>
   )
 }
