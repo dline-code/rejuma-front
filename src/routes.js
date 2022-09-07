@@ -13,12 +13,13 @@ const routes = [
   { path: '/matriculas', name: 'Matrículas', component: Matriculas, exact: true },
   { path: '/matriculas/create', name: 'Criar Matricula', component: NewMatricula },
   { path: '/propinas', name: 'Propinas', component: Propinas, exact: true },
-  { path: '/propinas/:id', name: 'Propinas - Detalhes', component: PropinaDetails },
   {
     path: '/propinas/create',
     name: 'Pagamento de Propinas',
     component: NewPropinaPayment,
+    exact: true,
   },
+  { path: '/propinas/:id', name: 'Propinas - Detalhes', component: PropinaDetails, exact: true },
 ]
 
 export default routes
