@@ -14,8 +14,11 @@ import {
   CButton,
 } from '@coreui/react'
 import React from 'react'
+import { useState } from 'react'
 
 function NewPropinaPayment() {
+  const [dateIsInterval, setDateIsInterval] = useState(true)
+
   const meses = [
     {
       value: 'Janeiro',
@@ -69,6 +72,22 @@ function NewPropinaPayment() {
       value: 'Cash',
       label: 'Dinheiro Vivo',
     },
+    {
+      value: 'TPA',
+      label: 'TPA',
+    },
+    {
+      value: 'Depósito Bancário',
+      label: 'Depósito Bancário',
+    },
+    {
+      value: 'Tranferência bancária',
+      label: 'Tranferência bancária',
+    },
+    {
+      value: 'Pagamento por referência MCX',
+      label: 'Pagamento por referência MCX',
+    },
   ]
 
   return (
@@ -80,59 +99,67 @@ function NewPropinaPayment() {
             <CContainer>
               <CRow>
                 <CCol>
-                  <CFormLabel> Nome do Aluno </CFormLabel>
-                  <CFormInput className="mb-3" />
+                  <CFormLabel htmlFor="name"> Nome do Aluno </CFormLabel>
+                  <CFormInput id="name" />
                 </CCol>
 
                 <CCol>
-                  <CFormLabel> Classe do Aluno </CFormLabel>
-                  <CFormInput className="mb-3" />
+                  <CFormLabel htmlFor="classe"> Classe do Aluno </CFormLabel>
+                  <CFormInput id="classe" />
                 </CCol>
               </CRow>
 
+              <br />
+
               <CRow>
-                <CCol sm="auto">
-                  <CFormLabel> O mês que pretende Pagar </CFormLabel>
-                  <CFormSelect options={meses} />
+                <CCol>
+                  <CFormLabel htmlFor="selectMeses"> O mês que pretende Pagar </CFormLabel>
+                  <CFormSelect id="selectMeses" options={meses} />
 
                   <br />
 
-                  <CFormLabel> O ano que pretende Pagar </CFormLabel>
-                  <CFormSelect options={anos} />
+                  <CFormLabel htmlFor="selectAnos"> O ano que pretende Pagar </CFormLabel>
+                  <CFormSelect id="selectAnos" options={anos} />
 
                   <br />
-                  <CFormLabel>Adicionar intervalo</CFormLabel>
-                  <CFormCheck style={{ marginLeft: 5 }} />
+                  <CFormLabel htmlFor="addInterval">Adicionar intervalo</CFormLabel>
+                  <CFormCheck
+                    id="addInterval"
+                    style={{ marginLeft: 5 }}
+                    onChange={(e) =>
+                      e.target.checked ? setDateIsInterval(false) : setDateIsInterval(true)
+                    }
+                  />
                 </CCol>
 
-                <CCol sm="auto">
-                  <CFormLabel> Até </CFormLabel>
-                  <CFormSelect options={meses} />
+                <CCol>
+                  <CFormLabel htmlFor="selectMesesTo"> Até </CFormLabel>
+                  <CFormSelect options={meses} id="selectMesesTo" disabled={dateIsInterval} />
 
                   <br />
 
-                  <CFormLabel> Até </CFormLabel>
-                  <CFormSelect options={anos} />
+                  <CFormLabel htmlFor="selectAnosTo"> Até </CFormLabel>
+                  <CFormSelect options={anos} id="selectAnosTo" disabled={dateIsInterval} />
                 </CCol>
 
-                <CCol sm="auto">
-                  <CFormLabel> Valor a Pagar </CFormLabel>
-                  <CFormInput />
+                <CCol>
+                  <CFormLabel htmlFor="valueToPay"> Valor a Pagar </CFormLabel>
+                  <CFormInput id="valueToPay" />
 
                   <br />
 
-                  <CFormLabel> A pessoa que pagou </CFormLabel>
-                  <CFormInput />
+                  <CFormLabel htmlFor="whoPaid"> A pessoa que pagou </CFormLabel>
+                  <CFormInput id="whoPaid" />
                 </CCol>
 
-                <CCol sm="auto">
-                  <CFormLabel> Forma de pagamento </CFormLabel>
-                  <CFormInput />
+                <CCol>
+                  <CFormLabel htmlFor="paymentMode"> Forma de pagamento </CFormLabel>
+                  <CFormSelect options={formasDePagamento} id="paymentMode" />
 
                   <br />
 
-                  <CFormLabel> Referência do Pagamento </CFormLabel>
-                  <CFormInput />
+                  <CFormLabel htmlFor="paymentReference"> Referência do Pagamento </CFormLabel>
+                  <CFormInput id="paymentReference" />
                 </CCol>
               </CRow>
               <CRow>
