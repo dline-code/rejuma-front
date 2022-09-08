@@ -28,7 +28,7 @@ function Step1(props) {
   return (
     <div>
       <span style={{ color: 'red' }}>{error}</span>
-      <h1>Dados da Matrícula</h1>
+      <h1>Cadastro</h1>
       <CForm>
         <CRow>
           <CCol>
@@ -63,10 +63,6 @@ function Step1(props) {
           </CCol>
         </CRow>
         <CRow>
-          <CCol>
-            <CFormLabel> Valor da Matrícula </CFormLabel>
-            <CFormInput name="name" onChange={onInputChanged} />
-          </CCol>
           <CCol>
             <CFormLabel> Valor Do Primeiro Mês </CFormLabel>
             <CFormInput name="name" onChange={onInputChanged} />

@@ -14,7 +14,7 @@ import {
   CRow,
 } from '@coreui/react'
 
-function NewMatricula() {
+function NewCadastro() {
   const [trabalha, setTrabalha] = useState(false)
   return (
     <>
@@ -136,4 +136,4 @@ function NewMatricula() {
   )
 }
 
-export default NewMatricula
+export default NewCadastro
