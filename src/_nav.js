@@ -60,7 +60,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Propinas',
-    to: '/',
+    to: '/propinas',
     icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
   {
