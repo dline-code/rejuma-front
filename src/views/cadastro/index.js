@@ -1,6 +1,4 @@
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable prettier/prettier */
-import { 
+import {
   CButton,
   CCard,
   CCardBody,
@@ -14,120 +12,58 @@ import {
   CTableHead,
   CTableHeaderCell,
   CTableRow,
-
 } from '@coreui/react'
 import React from 'react'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+import { alunos } from './mock'
 
+function Cadastro() {
+  return (
+    <>
+      <CContainer>
+        <CCard>
+          <CCardHeader
+            style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+          >
+            <CCardTitle> Cadastro </CCardTitle>
+            <Link to="/cadastro/create">
+              <CButton>Novo Cadastro</CButton>
+            </Link>
+          </CCardHeader>
 
-function Cadastro () {
-    return (
-        <>
-        <CContainer>
-            <CCard>
-                <CCardHeader
-                    style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
-                >
-                    <CCardTitle> Cadastro </CCardTitle>
-                    <Link to="/cadastro/create">
-                    <CButton>Novo Cadastro</CButton>
-                    </Link>
-                </CCardHeader>
+          <CCardBody>
+            <CTable bordered>
+              <CTableHead>
+                <CTableRow>
+                  <CTableHeaderCell>#</CTableHeaderCell>
 
-                <CCardBody>
-                    <CTable bordered>
-                        <CTableHead>
-                            <CTableRow>
-                                <CTableHeaderCell>#</CTableHeaderCell>
-                                <CTableHeaderCell width={'35%'}>Nome</CTableHeaderCell>
-                                <CTableHeaderCell width={'25%'}>BI Nº</CTableHeaderCell>
-                                <CTableHeaderCell>Género</CTableHeaderCell>
-                                <CTableHeaderCell>Data de Nascimento</CTableHeaderCell>
-                            </CTableRow>
-                        </CTableHead>
+                  <CTableHeaderCell width={'35%'}>Nome</CTableHeaderCell>
+                  <CTableHeaderCell width={'25%'}>BI Nº</CTableHeaderCell>
+                  <CTableHeaderCell>Género</CTableHeaderCell>
+                  <CTableHeaderCell>Data de Nascimento</CTableHeaderCell>
+                </CTableRow>
+              </CTableHead>
 
-                        <CTableBody>
+              <CTableBody>
+                {alunos.map((item) => {
+                  return (
+                    <CTableRow key={item.id}>
+                      <CTableDataCell> {item.id} </CTableDataCell>
+                      <CTableDataCell> {item.nome} </CTableDataCell>
+                      <CTableDataCell> {item.bi} </CTableDataCell>
+                      <CTableDataCell> {item.genero} </CTableDataCell>
+                      <CTableDataCell> {item.datadeNascimento} </CTableDataCell>
+                    </CTableRow>
+                  )
+                })}
+              </CTableBody>
 
-                        <CTableRow>
-                        <CTableDataCell> 1 </CTableDataCell>
-                        <CTableDataCell> Goreth Manuel </CTableDataCell>
-                        <CTableDataCell> 009696435LA190 </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 2 </CTableDataCell>
-                        <CTableDataCell> Albertina Jorge </CTableDataCell>
-                        <CTableDataCell> 009696435LA190 </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1992 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 3 </CTableDataCell>
-                        <CTableDataCell> Domingos Sebastião </CTableDataCell>
-                        <CTableDataCell> 009696435LA190 </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 4 </CTableDataCell>
-                        <CTableDataCell> Mário Varela </CTableDataCell>
-                        <CTableDataCell> 009696435LA190 </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 5 </CTableDataCell>
-                        <CTableDataCell> Suzana Pereira </CTableDataCell>
-                        <CTableDataCell> 009696435LA190 </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 6 </CTableDataCell>
-                        <CTableDataCell> Luzia José </CTableDataCell>
-                        <CTableDataCell> 009696435LA190 </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 7 </CTableDataCell>
-                        <CTableDataCell> Osvaldo de Sousa </CTableDataCell>
-                        <CTableDataCell> 009696435LA190 </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 8 </CTableDataCell>
-                        <CTableDataCell> Magarida André </CTableDataCell>
-                        <CTableDataCell> 009696435LA190 </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                            <CTableDataCell> 9 </CTableDataCell>
-                            <CTableDataCell> Paulino Passil </CTableDataCell>
-                            <CTableDataCell> 009696435LA190 </CTableDataCell>
-                            <CTableDataCell> M </CTableDataCell>
-                            <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-                        </CTableBody>
-
-                        <CTableFoot></CTableFoot>
-                    </CTable>
-                 </CCardBody>
-								</CCard>
-							</CContainer>
-        
-     </>
+              <CTableFoot></CTableFoot>
+            </CTable>
+          </CCardBody>
+        </CCard>
+      </CContainer>
+    </>
   )
 }
 
