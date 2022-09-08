@@ -21,6 +21,7 @@ import {
 } from '@coreui/react'
 import Link from 'react-router-dom/Link'
 import FilterDropDown from './filterDropDown'
+import { propinasData } from './data'
 
 function Propinas() {
   return (
@@ -51,76 +52,16 @@ function Propinas() {
               </CTableRow>
             </CTableHead>
             <CTableBody>
-              <CTableRow>
-                <CTableDataCell> 1 </CTableDataCell>
-                <CTableDataCell> 10 </CTableDataCell>
-                <CTableDataCell> Mário Domingos Varela </CTableDataCell>
-                <CTableDataCell> Julho </CTableDataCell>
-                <CTableDataCell> 10/09/1990 </CTableDataCell>
-              </CTableRow>
-              <CTableRow>
-                <CTableDataCell> 2 </CTableDataCell>
-                <CTableDataCell> 1 </CTableDataCell>
-                <CTableDataCell> Josiel Junior Samba </CTableDataCell>
-                <CTableDataCell> Maio </CTableDataCell>
-                <CTableDataCell> 02/09/2004 </CTableDataCell>
-              </CTableRow>
-              <CTableRow>
-                <CTableDataCell> 3 </CTableDataCell>
-                <CTableDataCell> 2 </CTableDataCell>
-                <CTableDataCell> Jovem Feiamente Horrivel </CTableDataCell>
-                <CTableDataCell> Dezembro </CTableDataCell>
-                <CTableDataCell> 14/12/2005 </CTableDataCell>
-              </CTableRow>
-              <CTableRow>
-                <CTableDataCell> 4 </CTableDataCell>
-                <CTableDataCell> 5 </CTableDataCell>
-                <CTableDataCell> Mariana Vinevala Martins </CTableDataCell>
-                <CTableDataCell> Junho </CTableDataCell>
-                <CTableDataCell> 11/08/2003 </CTableDataCell>
-              </CTableRow>
-              <CTableRow>
-                <CTableDataCell> 5 </CTableDataCell>
-                <CTableDataCell> 2 </CTableDataCell>
-                <CTableDataCell> Jovem Feiamente Horrivel </CTableDataCell>
-                <CTableDataCell> Dezembro </CTableDataCell>
-                <CTableDataCell> 14/12/2005 </CTableDataCell>
-              </CTableRow>
-              <CTableRow>
-                <CTableDataCell> 6 </CTableDataCell>
-                <CTableDataCell> 10 </CTableDataCell>
-                <CTableDataCell> Mário Domingos Varela </CTableDataCell>
-                <CTableDataCell> Julho </CTableDataCell>
-                <CTableDataCell> 10/09/1990 </CTableDataCell>
-              </CTableRow>
-              <CTableRow>
-                <CTableDataCell> 7 </CTableDataCell>
-                <CTableDataCell> 1 </CTableDataCell>
-                <CTableDataCell> Josiel Junior Samba </CTableDataCell>
-                <CTableDataCell> Maio </CTableDataCell>
-                <CTableDataCell> 02/09/2004 </CTableDataCell>
-              </CTableRow>
-              <CTableRow>
-                <CTableDataCell> 8 </CTableDataCell>
-                <CTableDataCell> 5 </CTableDataCell>
-                <CTableDataCell> Mariana Vinevala Martins </CTableDataCell>
-                <CTableDataCell> Junho </CTableDataCell>
-                <CTableDataCell> 11/08/2003 </CTableDataCell>
-              </CTableRow>
-              <CTableRow>
-                <CTableDataCell> 9 </CTableDataCell>
-                <CTableDataCell> 10 </CTableDataCell>
-                <CTableDataCell> Mário Domingos Varela </CTableDataCell>
-                <CTableDataCell> Julho </CTableDataCell>
-                <CTableDataCell> 10/09/1990 </CTableDataCell>
-              </CTableRow>
-              <CTableRow>
-                <CTableDataCell> 10 </CTableDataCell>
-                <CTableDataCell> 1 </CTableDataCell>
-                <CTableDataCell> Josiel Junior Samba </CTableDataCell>
-                <CTableDataCell> Maio </CTableDataCell>
-                <CTableDataCell> 02/09/2004 </CTableDataCell>
-              </CTableRow>
+              {propinasData &&
+                propinasData.map((item, index) => (
+                  <CTableRow key={index}>
+                    <CTableDataCell> {index + 1} </CTableDataCell>
+                    <CTableDataCell> {item.classe} </CTableDataCell>
+                    <CTableDataCell> {item.name} </CTableDataCell>
+                    <CTableDataCell> {item.lastMonthPaid} </CTableDataCell>
+                    <CTableDataCell> {item.lastPaymentDate} </CTableDataCell>
+                  </CTableRow>
+                ))}
             </CTableBody>
             <CTableFoot></CTableFoot>
           </CTable>
