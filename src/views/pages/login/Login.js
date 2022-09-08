@@ -23,6 +23,7 @@ const Login = () => {
 
   const handleSubmit = () => {
     setLoading(true)
+    // eslint-disable-next-line
     const loginData = {
       contact,
       password,
