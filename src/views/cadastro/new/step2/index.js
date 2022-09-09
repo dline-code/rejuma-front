@@ -42,25 +42,27 @@ function Step2(props) {
           </CCol>
           <CCol>
             <CFormLabel> Data de Nascimento </CFormLabel>
+            <CFormInput name="otherName" onChange={onInputChanged} type="date" />
+          </CCol>
+        </CRow>
+        <CRow>
+          <CCol>
+            <CFormLabel style={{ marginTop: '15px' }}> Nº do BI </CFormLabel>
+            <CFormInput name="name" onChange={onInputChanged} />
+          </CCol>
+          <CCol>
+            <CFormLabel style={{ marginTop: '15px' }}> Residência </CFormLabel>
+            <CFormInput name="name" onChange={onInputChanged} />
+          </CCol>
+          <CCol>
+            <CFormLabel style={{ marginTop: '15px' }}> Profissão </CFormLabel>
             <CFormInput name="otherName" onChange={onInputChanged} />
           </CCol>
         </CRow>
         <CRow>
           <CCol>
-            <CFormLabel> Nº do BI </CFormLabel>
-            <CFormInput name="name" onChange={onInputChanged} />
-          </CCol>
-          <CCol>
-            <CFormLabel> Residência </CFormLabel>
-            <CFormInput name="name" onChange={onInputChanged} />
-          </CCol>
-          <CCol>
-            <CFormLabel> Profissão </CFormLabel>
-            <CFormInput name="otherName" onChange={onInputChanged} />
-          </CCol>
-          <CCol>
-            <CFormLabel> Contacto </CFormLabel>
-            <CFormInput name="otherName" onChange={onInputChanged} />
+            <CFormLabel style={{ marginTop: '15px' }}> Contacto </CFormLabel>
+            <CFormInput name="otherName" onChange={onInputChanged} style={{ width: '285px' }} />
           </CCol>
         </CRow>
       </CForm>
