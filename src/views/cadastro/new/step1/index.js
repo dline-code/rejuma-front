@@ -28,7 +28,7 @@ function Step1(props) {
   return (
     <div>
       <span style={{ color: 'red' }}>{error}</span>
-      <h1>Cadastro</h1>
+      <h2>Cadastro</h2>
       <CForm>
         <CRow>
           <CCol>
@@ -46,7 +46,7 @@ function Step1(props) {
         </CRow>
         <CRow>
           <CCol>
-            <CFormLabel> Classe </CFormLabel>
+            <CFormLabel style={{ marginTop: '15px' }}> Classe </CFormLabel>
             <CFormSelect aria-label="Default select example">
               <option value="1">7ª classe</option>
               <option value="2">8ª classe</option>
@@ -55,7 +55,7 @@ function Step1(props) {
             </CFormSelect>
           </CCol>
           <CCol>
-            <CFormLabel> Curso </CFormLabel>
+            <CFormLabel style={{ marginTop: '15px' }}> Curso </CFormLabel>
             <CFormSelect aria-label="Default select example">
               <option value="1">Informática</option>
               <option value="2">Contablidade</option>
@@ -64,15 +64,17 @@ function Step1(props) {
             </CFormSelect>
           </CCol>
           <CCol>
-            <CFormLabel> Turno </CFormLabel>
+            <CFormLabel style={{ marginTop: '15px' }}> Turno </CFormLabel>
             <CFormSelect aria-label="Default select example">
               <option value="1">Manhã</option>
               <option value="2">Tarde</option>
             </CFormSelect>
           </CCol>
+        </CRow>
+        <CRow>
           <CCol>
-            <CFormLabel> Documentos </CFormLabel>
-            <CFormInput name="file" onChange={onInputChanged} />
+            <CFormLabel style={{ marginTop: '15px' }}> Documentos </CFormLabel>
+            <CFormInput name="file" onChange={onInputChanged} style={{ width: '285px' }} />
           </CCol>
         </CRow>
       </CForm>
