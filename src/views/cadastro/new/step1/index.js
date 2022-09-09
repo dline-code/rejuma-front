@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CForm, CFormInput, CFormLabel, CCol, CRow } from '@coreui/react'
+import { CForm, CFormInput, CFormLabel, CCol, CRow, CFormSelect } from '@coreui/react'
 import ActionButtons from '../actionsButtons'
 
 function Step1(props) {
@@ -47,29 +47,32 @@ function Step1(props) {
         <CRow>
           <CCol>
             <CFormLabel> Classe </CFormLabel>
-            <CFormInput name="name" onChange={onInputChanged} />
+            <CFormSelect aria-label="Default select example">
+              <option value="1">7ª classe</option>
+              <option value="2">8ª classe</option>
+              <option value="3">9ª classe</option>
+              <option value="3">10ª classe</option>
+            </CFormSelect>
           </CCol>
           <CCol>
             <CFormLabel> Curso </CFormLabel>
-            <CFormInput name="name" onChange={onInputChanged} />
+            <CFormSelect aria-label="Default select example">
+              <option value="1">Informática</option>
+              <option value="2">Contablidade</option>
+              <option value="3">Pedagogia</option>
+              <option value="3">Gestão</option>
+            </CFormSelect>
           </CCol>
           <CCol>
             <CFormLabel> Turno </CFormLabel>
-            <CFormInput name="otherName" onChange={onInputChanged} />
+            <CFormSelect aria-label="Default select example">
+              <option value="1">Manhã</option>
+              <option value="2">Tarde</option>
+            </CFormSelect>
           </CCol>
           <CCol>
             <CFormLabel> Documentos </CFormLabel>
             <CFormInput name="file" onChange={onInputChanged} />
-          </CCol>
-        </CRow>
-        <CRow>
-          <CCol>
-            <CFormLabel> Valor Do Primeiro Mês </CFormLabel>
-            <CFormInput name="name" onChange={onInputChanged} />
-          </CCol>
-          <CCol>
-            <CFormLabel> Valor do Uniforme </CFormLabel>
-            <CFormInput name="otherName" onChange={onInputChanged} />
           </CCol>
         </CRow>
       </CForm>
