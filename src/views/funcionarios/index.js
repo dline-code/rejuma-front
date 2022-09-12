@@ -18,6 +18,7 @@ import {
 } from '@coreui/react'
 import React from 'react'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+import { funcionarios } from './mock'
 
 
 function Funcionarios () {
@@ -40,93 +41,31 @@ function Funcionarios () {
                             <CTableRow>
                                 <CTableHeaderCell>#</CTableHeaderCell>
                                 <CTableHeaderCell width={'35%'}>Nome</CTableHeaderCell>
-                                <CTableHeaderCell width={'25%'}>Cargo</CTableHeaderCell>
-                                <CTableHeaderCell>Género</CTableHeaderCell>
-                                <CTableHeaderCell>Data de Nascimento</CTableHeaderCell>
+                                <CTableHeaderCell width={'25%'}>Gênero</CTableHeaderCell>
+                                <CTableHeaderCell>Cargo</CTableHeaderCell>
+                                <CTableHeaderCell>Salário</CTableHeaderCell>
                             </CTableRow>
                         </CTableHead>
 
                         <CTableBody>
-
-                        <CTableRow>
-                        <CTableDataCell> 1 </CTableDataCell>
-                        <CTableDataCell> Goreth Manuel </CTableDataCell>
-                        <CTableDataCell> Professora </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 2 </CTableDataCell>
-                        <CTableDataCell> Albertina Jorge </CTableDataCell>
-                        <CTableDataCell> Professora </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1992 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 3 </CTableDataCell>
-                        <CTableDataCell> Domingos Sebastião </CTableDataCell>
-                        <CTableDataCell> Secretário </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 4 </CTableDataCell>
-                        <CTableDataCell> Mário Varela </CTableDataCell>
-                        <CTableDataCell> Segurança </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 5 </CTableDataCell>
-                        <CTableDataCell> Suzana Pereira </CTableDataCell>
-                        <CTableDataCell> Professora </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 6 </CTableDataCell>
-                        <CTableDataCell> Luzia José </CTableDataCell>
-                        <CTableDataCell> Secretária Pedagógica </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 7 </CTableDataCell>
-                        <CTableDataCell> Osvaldo de Sousa </CTableDataCell>
-                        <CTableDataCell> Professor </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                        <CTableDataCell> 8 </CTableDataCell>
-                        <CTableDataCell> Magarida André </CTableDataCell>
-                        <CTableDataCell> Coordenadora </CTableDataCell>
-                        <CTableDataCell> M </CTableDataCell>
-                        <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
-
-                        <CTableRow>
-                            <CTableDataCell> 9 </CTableDataCell>
-                            <CTableDataCell> Paulino Passil </CTableDataCell>
-                            <CTableDataCell> Servente Escolar </CTableDataCell>
-                            <CTableDataCell> M </CTableDataCell>
-                            <CTableDataCell> 10/09/1990 </CTableDataCell>
-                        </CTableRow>
+                            {funcionarios.map((item) => {
+                                return (
+                                    <CTableRow key={item.id}>
+                                        <CTableDataCell> {item.id} </CTableDataCell>
+                                        <CTableDataCell> {item.nome} </CTableDataCell>
+                                        <CTableDataCell> {item.genero} </CTableDataCell>
+                                        <CTableDataCell> {item.cargo} </CTableDataCell>
+                                        <CTableDataCell> {item.salario} </CTableDataCell>
+                                    </CTableRow>
+                                )
+                            })}
                         </CTableBody>
 
                         <CTableFoot></CTableFoot>
                     </CTable>
-                 </CCardBody>
-								</CCard>
-							</CContainer>
-        
+                </CCardBody>
+			</CCard>
+        </CContainer>  
      </>
   )
 }
