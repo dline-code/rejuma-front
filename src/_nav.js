@@ -15,6 +15,12 @@ const _nav = [
     items: [
       {
         component: CNavItem,
+        name: 'Cadastro',
+        to: '/cadastro',
+        icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
+      },
+      {
+        component: CNavItem,
         name: 'Matrícula',
         to: '/matriculas',
         icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
@@ -54,7 +60,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Propinas',
-    to: '/',
+    to: '/propinas',
     icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
   {

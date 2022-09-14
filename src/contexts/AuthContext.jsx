@@ -3,6 +3,7 @@ import React, { createContext, useState } from 'react'
 const AuthContext = createContext({})
 
 const AuthProvider = ({ children }) => {
+  // eslint-disable-next-line
   const [loading, setLoading] = useState(true)
 
   if (loading) {
