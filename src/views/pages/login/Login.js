@@ -17,6 +17,7 @@ import {
 import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
 import Alunos from '../../../assets/images/alunos.jpg'
+import { registerables } from 'chart.js'
 
 const Login = () => {
   const [loading, setLoading] = useState(false)
@@ -34,7 +35,12 @@ const Login = () => {
   return (
     <div
       className="min-vh-100 d-flex flex-row align-items-center"
-      style={{ backgroundImage: `url(${Alunos})`, backgroundSize: 'cover', height: '90%' }}
+      style={{
+        backgroundImage: `url(${Alunos})`,
+        backgroundSize: 'cover',
+        backgroundColor: 'red',
+      }}
+      blurRadius={6}
     >
       <CContainer>
         <CRow className="justify-content-center">
@@ -93,17 +99,8 @@ const Login = () => {
                 <CCardBody className="text-center">
                   <div>
                     <h2>Criar conta</h2>
-                    <p>
-                      Criar uma conta para explorar os recursos que o Zuri Box oferece para o seu
-                      estabelecimento de beleza.
-                    </p>
-                    <CButton
-                      color="primary"
-                      className="mt-3"
-                      active
-                      tabIndex={-1}
-                      onClick={() => (window.location.href = 'https://zuri-box.com/signup')}
-                    >
+                    <p>Bem-vindo ao rejuma, o melhor ensino você encontra aqui.</p>
+                    <CButton color="primary" className="mt-3" active tabIndex={-1}>
                       Criar uma conta!
                     </CButton>
                   </div>
