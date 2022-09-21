@@ -12,9 +12,11 @@ import {
   CInputGroupText,
   CRow,
   CSpinner,
+  CImage,
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
+import Alunos from '../../../assets/images/alunos.jpg'
 
 const Login = () => {
   const [loading, setLoading] = useState(false)
@@ -30,7 +32,10 @@ const Login = () => {
   }
 
   return (
-    <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
+    <div
+      className="min-vh-100 d-flex flex-row align-items-center"
+      style={{ backgroundImage: `url(${Alunos})`, backgroundSize: 'cover', height: '90%' }}
+    >
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md={8}>
@@ -75,11 +80,11 @@ const Login = () => {
                           Entrar
                         </CButton>
                       </CCol>
-                      {/* <CCol xs={6} className="text-right">
+                      <CCol xs={6} className="text-right">
                         <CButton color="link" className="px-0">
-                          Esqueceu sua senha??
+                          Esqueceu sua senha?
                         </CButton>
-                      </CCol> */}
+                      </CCol>
                     </CRow>
                   </CForm>
                 </CCardBody>
