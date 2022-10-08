@@ -14,10 +14,43 @@ import {
 } from '@coreui/react'
 import React from 'react'
 import { useState } from 'react'
-import { anos, meses, formasDePagamento } from './data'
+import { anos, meses, formasDePagamento, classes } from './data'
+import { ReactSearchAutocomplete } from 'react-search-autocomplete'
 
 function NewPropinaPayment() {
   const [dateIsInterval, setDateIsInterval] = useState(true)
+
+  const exampleNames = [
+    {
+      id: 0,
+      name: 'José Gonçalves',
+    },
+    {
+      id: 1,
+      name: 'Goreth Manuel',
+    },
+    {
+      id: 2,
+      name: 'Margarida André',
+    },
+    {
+      id: 3,
+      name: 'Matuta Jorge',
+    },
+    {
+      id: 4,
+      name: 'Passil Paulino',
+    },
+  ]
+
+  const formatResult = (item) => {
+    return (
+      <>
+        <span style={{ display: 'block', textAlign: 'left' }}>id: {item.id}</span>
+        <span style={{ display: 'block', textAlign: 'left' }}>name: {item.name}</span>
+      </>
+    )
+  }
 
   return (
     <>
@@ -29,12 +62,23 @@ function NewPropinaPayment() {
               <CRow>
                 <CCol>
                   <CFormLabel htmlFor="name"> Nome do Aluno </CFormLabel>
-                  <CFormInput id="name" />
+                  {/* <CFormInput id="name" /> */}
+
+                  <ReactSearchAutocomplete
+                    items={exampleNames}
+                    // onSearch={handleOnSearch}
+                    // onHover={handleOnHover}
+                    // onSelect={handleOnSelect}
+                    // onFocus={handleOnFocus}
+                    id="name"
+                    autoFocus
+                    formatResult={formatResult}
+                  />
                 </CCol>
 
                 <CCol>
                   <CFormLabel htmlFor="classe"> Classe do Aluno </CFormLabel>
-                  <CFormInput id="classe" />
+                  <CFormSelect id="classe" options={classes} />
                 </CCol>
               </CRow>
 
