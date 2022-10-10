@@ -7,6 +7,7 @@ const Cadastro = React.lazy(() => import('./views/cadastro'))
 const NewCadastro = React.lazy(() => import('./views/cadastro/new'))
 const Produtos = React.lazy(() => import('./views/produtos'))
 const Funcionarios = React.lazy(() => import('./views/funcionarios'))
+//const NewProduto = React.lazy(() => import('./views/produtos/new'))
 
 //Forms
 const ChecksRadios = React.lazy(() => import('./views/forms/checks-radios/ChecksRadios'))
@@ -36,6 +37,8 @@ const routes = [
   { path: '/matriculas/create', name: 'Criar Matricula', component: NewMatricula },
   { path: '/produtos', name: 'Produtos', component: Produtos, exact: true },
   { path: '/funcionarios', name: 'Funcionarios', component: Funcionarios, exact: true },
+
+  //{ path: '/produto/create', name: 'Adicionar novo Produto', component: NewProduto },
 
   { path: '/charts', name: 'Charts', component: Charts },
   { path: '/forms', name: 'Forms', component: FormControl, exact: true },
