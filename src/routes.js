@@ -37,7 +37,6 @@ const routes = [
   { path: '/matriculas/create', name: 'Criar Matricula', component: NewMatricula },
   { path: '/produtos', name: 'Produtos', component: Produtos, exact: true },
   { path: '/funcionarios', name: 'Funcionarios', component: Funcionarios, exact: true },
-
   //{ path: '/produto/create', name: 'Adicionar novo Produto', component: NewProduto },
 
   { path: '/charts', name: 'Charts', component: Charts },
