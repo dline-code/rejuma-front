@@ -23,10 +23,6 @@ const Login = () => {
 
   const handleSubmit = () => {
     setLoading(true)
-    const loginData = {
-      contact,
-      password,
-    }
   }
 
   return (
@@ -75,11 +71,6 @@ const Login = () => {
                           Entrar
                         </CButton>
                       </CCol>
-                      {/* <CCol xs={6} className="text-right">
-                        <CButton color="link" className="px-0">
-                          Esqueceu sua senha??
-                        </CButton>
-                      </CCol> */}
                     </CRow>
                   </CForm>
                 </CCardBody>
