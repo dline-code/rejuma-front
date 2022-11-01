@@ -18,15 +18,9 @@ import { cilLockLocked, cilUser } from '@coreui/icons'
 
 const Login = () => {
   const [loading, setLoading] = useState(false)
-  const [password, setPassword] = useState('')
-  const [contact, setContact] = useState('')
 
   const handleSubmit = () => {
     setLoading(true)
-    const loginData = {
-      contact,
-      password,
-    }
   }
 
   return (
@@ -44,11 +38,7 @@ const Login = () => {
                       <CInputGroupText>
                         <CIcon icon={cilUser} />
                       </CInputGroupText>
-                      <CFormInput
-                        placeholder="Username"
-                        autoComplete="username"
-                        onChange={(event) => setContact(event.target.value)}
-                      />
+                      <CFormInput placeholder="Username" autoComplete="username" />
                     </CInputGroup>
                     <CInputGroup className="mb-4">
                       <CInputGroupText>
@@ -58,7 +48,6 @@ const Login = () => {
                         type="password"
                         placeholder="Password"
                         autoComplete="current-password"
-                        onChange={(event) => setPassword(event.target.value)}
                       />
                     </CInputGroup>
                     <CRow>
@@ -75,11 +64,6 @@ const Login = () => {
                           Entrar
                         </CButton>
                       </CCol>
-                      {/* <CCol xs={6} className="text-right">
-                        <CButton color="link" className="px-0">
-                          Esqueceu sua senha??
-                        </CButton>
-                      </CCol> */}
                     </CRow>
                   </CForm>
                 </CCardBody>

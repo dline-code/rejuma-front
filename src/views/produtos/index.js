@@ -25,7 +25,7 @@ import {
   } from '@coreui/react'
   import React, { useState } from 'react'
   import CIcon from '@coreui/icons-react'
-  import { cilPen, cilTrash } from '@coreui/icons'
+  import { cilDelete, cilTrash } from '@coreui/icons'
   //import { Link } from 'react-router-dom/cjs/react-router-dom.min'
   
   
@@ -60,46 +60,46 @@ import {
   
                           <CTableRow>
                           <CTableDataCell style={{ textAlign: 'center' }} > 1 </CTableDataCell>
-                          <CTableDataCell> Cartão </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > 0 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }}> 9 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilPen}/> </CTableDataCell>
+                          <CTableDataCell> Uniforme </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > 009696435LA190 </CTableDataCell>
+                          <CTableDataCell> M </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilDelete}/> </CTableDataCell>
                           <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilTrash}/> </CTableDataCell>
                           </CTableRow>
   
                           <CTableRow>
                           <CTableDataCell style={{ textAlign: 'center' }} > 2 </CTableDataCell>
                           <CTableDataCell> Uniforme </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > 3 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }}> 30 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilPen}/> </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > 009696435LA190 </CTableDataCell>
+                          <CTableDataCell> M </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilDelete}/> </CTableDataCell>
                           <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilTrash}/> </CTableDataCell>
                           </CTableRow>
   
                           <CTableRow>
                           <CTableDataCell style={{ textAlign: 'center' }} > 4 </CTableDataCell>
-                          <CTableDataCell> Folha </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > 20 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }}> 15 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilPen}/> </CTableDataCell>
+                          <CTableDataCell> Uniforme </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > 009696435LA190 </CTableDataCell>
+                          <CTableDataCell> M </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilDelete}/> </CTableDataCell>
                           <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilTrash}/> </CTableDataCell>
                           </CTableRow>
   
                           <CTableRow>
                           <CTableDataCell style={{ textAlign: 'center' }} > 5 </CTableDataCell>
                           <CTableDataCell> Uniforme </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > 12 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }}> 44 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilPen}/> </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > 009696435LA190 </CTableDataCell>
+                          <CTableDataCell> M </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilDelete}/> </CTableDataCell>
                           <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilTrash}/> </CTableDataCell>
                           </CTableRow>
   
                           <CTableRow>
                           <CTableDataCell style={{ textAlign: 'center' }} > 6 </CTableDataCell>
-                          <CTableDataCell> Cartão </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > 5 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }}> 35 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilPen}/> </CTableDataCell>
+                          <CTableDataCell > Uniforme </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > 009696435LA190 </CTableDataCell>
+                          <CTableDataCell> M </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilDelete}/> </CTableDataCell>
                           <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilTrash}/> </CTableDataCell>
                           
                           </CTableRow>
@@ -107,27 +107,27 @@ import {
                           <CTableRow>
                           <CTableDataCell style={{ textAlign: 'center' }} > 7 </CTableDataCell>
                           <CTableDataCell> Uniforme </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > 2 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }}> 5 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilPen}/> </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > 009696435LA190 </CTableDataCell>
+                          <CTableDataCell> M </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilDelete}/> </CTableDataCell>
                           <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilTrash}/> </CTableDataCell>
                           </CTableRow>
   
                           <CTableRow>
                           <CTableDataCell style={{ textAlign: 'center' }} > 8 </CTableDataCell>
-                          <CTableDataCell> Folha </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > 10 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }}> 15 </CTableDataCell>
-                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilPen}/> </CTableDataCell>
+                          <CTableDataCell> Uniforme </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > 009696435LA190 </CTableDataCell>
+                          <CTableDataCell> M </CTableDataCell>
+                          <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilDelete}/> </CTableDataCell>
                           <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilTrash}/> </CTableDataCell>
                           </CTableRow>
   
                           <CTableRow>
                               <CTableDataCell style={{ textAlign: 'center' }} > 9 </CTableDataCell>
                               <CTableDataCell> Uniforme </CTableDataCell>
-                              <CTableDataCell style={{ textAlign: 'center' }} > 4 </CTableDataCell>
-                              <CTableDataCell style={{ textAlign: 'center' }}> 6 </CTableDataCell>
-                              <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilPen}/> </CTableDataCell>
+                              <CTableDataCell style={{ textAlign: 'center' }} > 009696435LA190 </CTableDataCell>
+                              <CTableDataCell> M </CTableDataCell>
+                              <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilDelete}/> </CTableDataCell>
                               <CTableDataCell style={{ textAlign: 'center' }} > <CIcon icon={cilTrash}/> </CTableDataCell>
                           </CTableRow>
                           </CTableBody>
